@@ -152,6 +152,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         Intent intent = new Intent(this,AboutView.class);
+        String resultMessage = resultText.getText().toString();
+        String yourMessage = editText2.getText().toString();
+        intent.putExtra("data",resultMessage);
+        intent.putExtra("data2",yourMessage);
         startActivity(intent);
 
     }
